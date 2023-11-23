@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Kenia&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #282c34;
+}
+
