@@ -19,7 +19,7 @@ function Header({ handleSearch}) {
       <div className='fixed z-50 shadow-md top-0 w-full mb-72 sm:flex sm:items-center sm:justify-center md:w-full justify-between h-16 bg-[#212532]'>
         <div className='flex justify-between space-x-20'> {/* container div */}
         <header className='mt-2 ml-5 sm:flex flex-row text-Ared font-Kenio font-bold text-size md:mt-0 md:ml-0'>NetClone</header>
-        <div className='sm:flex sm:flex-row '>
+        <div className='sm:flex sm:flex-row hidden lg:block'>
           <button className="w-9 h-9 bg-Ared text-white border  hover:bg-transparent">
             <BiSearchAlt className='text-1xl mx-auto'/>
             </button>
