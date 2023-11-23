@@ -11,6 +11,7 @@ import { FaHeart, FaCloudDownloadAlt } from 'react-icons/fa';
 
  function Home({ data, handleDataFromChild }) {
 
+console.log(data); 
 
   return (
     <>

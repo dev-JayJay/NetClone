@@ -19,7 +19,7 @@ function Header({ handleSearch}) {
       <div className='fixed z-50 shadow-md top-0 w-full mb-72 sm:flex sm:items-center sm:justify-center md:w-full justify-between h-16 bg-[#212532]'>
         <div className='flex justify-between space-x-20'> {/* container div */}
         <header className='mt-2 ml-5 sm:flex flex-row text-Ared font-Kenio font-bold text-size md:mt-0 md:ml-0'>NetClone</header>
-        <div className='sm:flex sm:flex-row hidden lg:block'>
+        <div className='sm:flex sm:flex-row hidden'>
           <button className="w-9 h-9 bg-Ared text-white border  hover:bg-transparent">
             <BiSearchAlt className='text-1xl mx-auto'/>
             </button>
@@ -30,7 +30,7 @@ function Header({ handleSearch}) {
           />
         </div>
         <nav className=' lg:flex lg:flex-row'>
-          <ul className={`flex flex-col lg:flex lg:flex-row lg:justify-between lg:text-size lg:space-x-4 lg:ml-4 ${ clicked ? 'mt-14 ml-4 mr-52 w-full bg-[#212532]' : 'hidden'}`}>
+          <ul className={`flex flex-col lg:flex lg:flex-row lg:justify-between lg:text-size lg:space-x-4 lg:ml-4 ${ clicked ? 'mt-16 ml-4 mr-52 w-full bg-[#212532]' : 'hidden'}`}>
             <li>
               <Link className='text-white text-1xl font-bold font-Croissant transition-0.3s hover:text-red-700 hover:shadow-lg ' to='/'>Home</Link>
             </li>
