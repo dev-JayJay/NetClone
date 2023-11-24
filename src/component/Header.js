@@ -29,7 +29,7 @@ function Header({ handleSearch}) {
           />
         </div>
         <nav className=' lg:flex lg:flex-row'>
-          <ul className={`lg:flex lg:flex-row lg:justify-between lg:text-size lg:space-x-4 lg:ml-10 ${ clicked ? 'flex flex-col fixed top-16 left-0 w-full text-center items-center opacity-80 bg-[#212532]' : 'hidden'}`}>
+          <ul className={`lg:flex lg:flex-row lg:justify-between lg:text-size lg:space-x-4 lg:ml-10 ${ clicked ? 'flex flex-col fixed top-16 left-0 w-full h-max-full text-center align-center justify-center items-center opacity-80 bg-[#212532]' : 'hidden'}`}>
             <li>
               <Link className='text-white text-1xl lg:ml-10 font-bold font-Croissant transition-0.3s hover:text-red-700 hover:shadow-lg ' to='/'>Home</Link>
             </li>
