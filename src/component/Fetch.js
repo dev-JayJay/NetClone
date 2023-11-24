@@ -8,7 +8,7 @@ const Fetch = (url) => {
   useEffect(() => { 
     const abortCont = new AbortController();
 
-    fetch(url.replace("http://", "https://"), { signal: abortCont.signal })
+    fetch(url, { signal: abortCont.signal })
       .then((response) => {
         if (!response.ok) {
           throw Error("Please Reload Page, There's An Error Fetching API");

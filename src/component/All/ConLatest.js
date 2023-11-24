@@ -7,7 +7,7 @@ import Loading from '../Loading';
 
 function ConLatest() {
 
-    const {data, loading , error} = Fetch('https://api.themoviedb.org/3/person/popular/?api_key=d1b91924e3973009856fdd71a98f6082');
+    const {data, loading , error} = Fetch('https://api.themoviedb.org/3/discover/movie?api_key=7f46651666f1ca68e4cf0cb150551f07');
 
     if ( loading){
         return <div><Loading /></div>
