@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import { FaHeart } from 'react-icons/fa';
 import { MdList } from "react-icons/md";
-import { BiSolidUserPin, BiSearchAlt, BiSolidXCircle } from "react-icons/bi";
+import { BiSearchAlt, BiSolidXCircle } from "react-icons/bi";
 import { useState } from "react";
 
 
@@ -30,29 +29,29 @@ function Header({ handleSearch}) {
           />
         </div>
         <nav className=' lg:flex lg:flex-row'>
-          <ul className={`flex flex-col lg:flex lg:flex-row lg:justify-between lg:text-size lg:space-x-4 lg:ml-4 ${ clicked ? 'mt-16 ml-4 mr-52 w-full bg-[#212532]' : 'hidden'}`}>
+          <ul className={`lg:flex lg:flex-row lg:justify-between lg:text-size lg:space-x-4 lg:ml-10 ${ clicked ? 'flex flex-col fixed top-16 left-0 w-full text-center items-center opacity-80 bg-[#212532]' : 'hidden'}`}>
             <li>
-              <Link className='text-white text-1xl font-bold font-Croissant transition-0.3s hover:text-red-700 hover:shadow-lg ' to='/'>Home</Link>
+              <Link className='text-white text-1xl lg:ml-10 font-bold font-Croissant transition-0.3s hover:text-red-700 hover:shadow-lg ' to='/'>Home</Link>
             </li>
 
             <li>
-              <Link className='text-white text-1xl font-bold font-Croissant' to='/Movies'>Movies</Link>
+              <Link className='text-white text-1xl lg:ml-10 font-bold font-Croissant' to='/Movies'>Movies</Link>
             </li>
 
             <li>
-              <Link className='text-white text-1xl font-bold font-Croissant' to='/About'>About</Link>
+              <Link className='text-white text-1xl lg:ml-10 font-bold font-Croissant' to='/About'>About</Link>
             </li>
 
             <li>
-              <Link className='text-white text-1xl font-bold font-Croissant mr-9' to='/Contact'>Contact </Link>
+              <Link className='text-white text-1xl lg:ml-10 font-bold font-Croissant pb-5 lg:pb-0 lg:mr-9' to='/Contact'>Contact </Link>
             </li>
           </ul>
-          <div className='hidden lg:flex lg:flex-row lg:justify-between lg:space-x-14 lg:ml-2'>
+          {/* <div className='hidden lg:flex lg:flex-row lg:justify-between lg:space-x-14 lg:ml-2'>
             <Link to='/Login' className='text-4xl text-white'><BiSolidUserPin /></Link>
             <Link to='/Like' className=''><div className='flex flex-row relative'><FaHeart className='text-white text-4xl' />
             </div>
             </Link>
-          </div>
+          </div> */}
         </nav>
         <button onClick={handleClick} className='block top-3 right-4 fixed text-white text-4xl lg:hidden'>
             {clicked ? <BiSolidXCircle /> : <MdList />}

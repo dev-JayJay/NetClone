@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { MdOutlineDateRange } from 'react-icons/md';
 import { FaHeart, FaCloudDownloadAlt } from 'react-icons/fa';
 
- function Home({ data, handleDataFromChild }) {
+ function Home({ data }) {
 
 console.log(data); 
 
@@ -51,7 +51,7 @@ console.log(data);
     })}
   </Swiper> 
 {/* imported some component to the home page */}
-  <ConMovieCard handleDataFromChild={handleDataFromChild} /> 
+  <ConMovieCard /> 
   <SubAbout />
   <ConMovieSlide /> 
     </>

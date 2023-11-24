@@ -13,28 +13,24 @@ function App() {
 
 
   const [searchText, setSearchText] = useState('');
-  const [popResult, setPopResult] = useState('');
-  const [filteResult, setFilteResult] = useState([]);
+  // const [popResult, setPopResult] = useState('');
+  // const [filteResult, setFilteResult] = useState([]);
 
 
   // const handleChange = (event) =>{
   //   setSearchText(event.target.value);
   // }
 
-  const handleDataFromChild = (childResult) => {
-    // Do something with the data received from the child
-    setPopResult(childResult);
-  };
 
   const handleSearch = (event) => {
     const searchTextValue = event.target.value;
     setSearchText(searchTextValue);
   
-    const results = popResult.filter((item) =>
-      item.title.toLowerCase().includes(searchTextValue.toLowerCase())
-    );
+    // const results = popResult.filter((item) =>
+    //   item.title.toLowerCase().includes(searchTextValue.toLowerCase())
+    // );
   
-    setFilteResult(results);
+    // setFilteResult(results);
   };
   
   
@@ -42,7 +38,7 @@ function App() {
     <>
     <Header searchText={searchText} handleSearch={handleSearch} />
     <Routes>
-        <Route path="/" element={<ConHome handleDataFromChild={handleDataFromChild} filteResult={filteResult} />} />
+        <Route path="/" element={<ConHome />} />
         <Route path='/movies' element={<Movies />} />
         <Route path="/about" element={<About />} />
         <Route path="/Contact" element={<Contact />} />

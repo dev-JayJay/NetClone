@@ -2,31 +2,14 @@ import SubHeader from './SubHeader';
 import { FaHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { TbHeartRateMonitor } from 'react-icons/tb';
-import { useEffect } from 'react';
 
 
-function MovieCard({ data, handleDataFromChild, filteResult }) {
+function MovieCard({ data }) {
     
-    useEffect(() => {
-        const childResult = data.results;
-        // console.log(childResult);
-        handleDataFromChild(childResult);
-    },[data, handleDataFromChild]);
 
     // console.log('the filtered result is' + filteResult);
   return (
     <div>
-        <div>
-            {
-                filteResult && filteResult.map((item) => {
-                    return(
-                        <div key={item.id}>
-                            <h1 className='text-white'>{ item.title }</h1>
-                        </div>
-                    );
-                })
-            }
-        </div> 
         <SubHeader title='Top Rated Movies On Net-Clone' icons={ <TbHeartRateMonitor />} />
        <div className='flex flex-row flex-wrap items-center justify-center'>
        {
