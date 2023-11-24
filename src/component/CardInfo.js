@@ -24,9 +24,6 @@ function CardInfo() {
       return <div>{ error }</div>
     }
 
-console.log(id);
-console.log(results);
-  
     return (
       <div>
         {results && (
